@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+.right
+{
+  width:0px;
+  height:0px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #1c7ecf ;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+.container{
+	width: 120px;
+height: 60px;
+background-color: #f25d8e;
+position: relative;
+}
+.bottom:after{
+	content: '';
+position: absolute;
+left: 50%;
+margin-left: -8px;
+bottom: -2px;
+border: 8px solid transparent;
+border-bottom: 8px solid #fff;
+}
+.bottom-2:after{
+	content: '';
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+margin: auto;
+	border: 8px solid transparent;
+border-bottom: 8px solid #fff;
+}
+
+#wrap .sjx{
+				width: 0px;
+				height: 0px;
+				border-width: 40px;
+				border-style: dashed solid dashed dashed; 
+				border-color: transparent red transparent transparent;
+				overflow: hidden; 
+			}
+		</style>
+	</head>
+	<body>
+	<h1>出现三角形原理</h1>
+	<div class='right'></div>
+	<h1>实际项目倒三角形:after伪类实现</h1>
+	<div class='container bottom'>
+	</div>
+	<h1>梯形效果</h1>
+	<div class='container bottom-2'>
+	</div>
+	<h1>兼容IE6三角形</h1>
+	<div id="wrap">
+		<div class="sjx"></div>
+	</div>
+	</body>
+	
+</html>

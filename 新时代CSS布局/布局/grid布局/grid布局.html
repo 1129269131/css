@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box {
+				background-color: #34a44d;
+				color: #fff;
+				text-align: center;
+			}
+		</style>
+		<style>
+			.gridcontent {
+				justify-content: normal;/*试试改为  justify-content: end; or justify-content: center;*/
+				align-content: normal;/*试试改为: align-content: space-around ， align-content: space-between ， align-content: space-evenly*/
+				display: grid;
+				grid-template-columns: repeat(3, 25%);
+				grid-template-rows: repeat(3, 20%);
+				grid-gap: 1em;
+				grid-template-areas: "a b b" "a b b" "c c d";
+			}
+			
+			.gridcontent .box.a {
+				grid-area: a
+			}
+			
+			.gridcontent .box.b {
+				grid-area: b
+			}
+			
+			.gridcontent .box.c {
+				grid-area: c
+			}
+			
+			.gridcontent .box.d {
+				grid-area: d
+			}
+		</style>
+	</head>
+
+	<body>
+		<section class="present" style="top: 112px; display: block;">
+			<div class="livecode livecode-2p" style="grid-template-columns:60% calc(40% - 0.5em)">
+				<div class="result gridcontent">
+					<div class="box a">A</div>
+					<div class="box b">B</div>
+					<div class="box c">C</div>
+					<div class="box d">D</div>
+				</div>
+			</div>
+		</section>
+	</body>
+
+</html>

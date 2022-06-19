@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="description" content="HTML5 canvas实现的静态循环滚动播放弹幕 » 张鑫旭-鑫空间-鑫生活" />
+		<meta name="description" content="张鑫旭web前端学习实例页面 HTML5 canvas实现的静态循环滚动播放弹幕" />
+		<meta name="keywords" content="html5, canvas, 弹幕, 静态数据" />
+		<meta name="author" content="张鑫旭, zhangxinxu" />
+		<title>HTML5</title>
+		
+	</head>
+
+	<body>
+		<script>
+			fun1 = function(){
+				var sum=0;
+				for(var i=1;i<=100;i++){
+					sum+=i;
+				}
+				alert(sum);
+			}
+			fun1();
+			fun2 = function(num){
+				var temp;
+				for(var i=2;i<=num;i++){
+					if(i<100){
+						temp=i;
+					}else{
+						temp=100;
+					}
+					for(var j=2;j<temp;j++){
+						if(i % j == 0) {
+							break;
+						}
+					}
+					if(j == temp) {
+						document.write(i + " ");
+					}
+				}
+			}
+//			fun2();
+//			
+			fun3 = function(num){
+				var max;
+				for(var i=2;i<=num;i++){
+					for(var j=2;j<i;j++){
+						if(i % j == 0) {
+							break;
+						}
+					}
+					if(j == i) {
+						document.write(i + " ");
+						max=i;
+					}
+				}
+				return max;
+			}
+			fun3(1000);
+
+
+		(function(){
+			alert(fun3(10000));
+		})();
+			
+				
+		</script>
+	</body>
+
+</html>

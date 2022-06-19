@@ -1,0 +1,47 @@
+<!--
+	来源:CSS世界37页
+	网址:http://demo.cssworld.cn/3/2-12.php
+	说明:绝对定位实现祖先元素height:auto，子元素height:100%
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box {
+				display: inline-block;
+				position: relative;
+			}
+			
+			.prev,
+			.next {
+				width: 50%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				opacity: .5;
+			}
+			
+			.prev {
+				left: 0;
+				background-color: #cd0000;
+			}
+			
+			.next {
+				right: 0;
+				background-color: #34538b;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<a href="javascript:" class="prev" title="上一张">上一张</a>
+			<a href="javascript:" class="next" title="下一张">下一张</a>
+			<img src="./img/height.jpg" />
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!--来源:CSS世界63页-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+.ask:before{
+	content: '提问:"';
+}
+.answer:before{
+	content: '回答:"';
+}
+.ask:after,.answer:after{
+	content: '"';
+}
+
+:lang(ch)>q{quotes: "“" '”';}
+:lang(en)>q{quotes: '"' '"';}
+:lang(no)>q{quotes: '《' '》';}
+		</style>
+	</head>
+	<body>
+	<h1>content实例</h1>
+	<div class='ask'>dsaf士大夫65</div>
+	<div class='answer'>asdfsadasdf大声道548</div>
+	<br/>
+	<h1>不同语言引号使用</h1>
+	<p lang='ch'><q>这本书很赞!</q></p>
+	<p lang='en'><q>This book is very good!</q></p>
+	<p lang='no'><q>denne bog er fantastisk!</q></p>
+	</body>
+	
+</html>

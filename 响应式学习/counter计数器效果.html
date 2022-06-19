@@ -1,0 +1,24 @@
+<!--来源:CSS世界63页-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+.counter {
+  counter-reset: wangxiaoer 2; 
+  font-size: 32px; 
+  font-family: Arial Black; 
+  color: #cd0000; 
+}
+.counter:before { 
+  content: counter(wangxiaoer); 
+}
+		</style>
+	</head>
+	<body>
+	<p>我叫王小二，字如其名，下面要出现的数字是：</p>
+<p class="counter"></p>
+	</body>
+	
+</html>

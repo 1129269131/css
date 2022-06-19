@@ -1,0 +1,51 @@
+<!--来源:http://www.zhangxinxu.com/wordpress/2014/04/%e8%87%aa%e9%80%82%e5%ba%94%e8%a1%a8%e6%a0%bc-%e5%ad%97%e7%ac%a6%e6%8d%a2%e8%a1%8c-%e6%ba%a2%e5%87%ba%e7%82%b9%e7%82%b9%e7%82%b9-table-text-overflow-ellipsis-word-wrap-break-all/-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+.table_fixed { table-layout: fixed; }
+.ell { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bk { word-break: break-all; }
+		</style>
+	</head>
+	<body>
+		<strong>原始表格</strong>
+    <table class="table" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <th scope="col" width="30%">标题</th>
+        <th scope="col" width="50%">概要</th>
+        <th scope="col" width="100">时间</th>
+      </tr>
+      <tr>
+        <td>单行点点点显示</td>
+        <td><div class="ell">据说Chrome34+支持响应式图片，就是直接&lt;img&gt;标签上使用特定属性，就可以实现图片自动的响应式获取，大伙可以试试~</div></td>
+        <td>2014-04-09 23:51</td>
+      </tr>
+      <tr>
+        <td>连续字符换行</td>
+        <td><div class="bk">zheduanzhongwenpinyinzhemechangwojiubuxingbuhuanhangyaobuliugezhongzizhileidemeirenfanyingjiusuanle</div></td>
+        <td>2014-04-09 23:53</td>
+      </tr>
+    </table>
+    <strong>处理后表格</strong>
+    <table class="table_fixed" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <th scope="col" width="30%">标题</th>
+        <th scope="col" width="50%">概要</th>
+        <th scope="col" width="100">时间</th>
+      </tr>
+      <tr>
+        <td>单行点点点显示</td>
+        <td><div class="ell">据说Chrome34+支持响应式图片，就是直接&lt;img&gt;标签上使用特定属性，就可以实现图片自动的响应式获取，大伙可以试试~</div></td>
+        <td>2014-04-09 23:51</td>
+      </tr>
+      <tr>
+        <td>连续字符换行</td>
+        <td><div class="bk">zheduanzhongwenpinyinzhemechangwojiubuxingbuhuanhangyaobuliugezhongzizhileidemeirenfanyingjiusuanle</div></td>
+        <td>2014-04-09 23:53</td>
+      </tr>
+    </table>
+	</body>
+</html>

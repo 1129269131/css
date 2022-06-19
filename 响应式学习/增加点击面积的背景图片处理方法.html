@@ -1,0 +1,65 @@
+<!--
+	来源:CSS世界107页
+	网址:http://demo.cssworld.cn/4/4-2.php
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+.clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
+.clearfix { *zoom:1;}
+.demo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+input[type] {
+    width: 200px;
+    height: 40px;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input:valid + .icon-clear {
+    visibility: visible;
+}
+.icon-clear {
+    line-height: 15px;
+    color: white;
+    visibility: hidden;
+}
+.icon-clear {
+    width: 16px;
+    height: 16px;
+    line-height: 15px;
+    margin: 1px 0 0 -38px;
+    border: 11px solid transparent;
+    border-radius: 50%;
+    background-color: #999;
+    background-clip: padding-box;
+    color: white;
+    position: absolute;
+    visibility: visible;
+    font-size: 14px;
+}
+
+
+.icon-clear::before {
+    content: "×";
+}	
+</style>
+	</head>
+	<body>
+		<div class="demo">
+    	          
+            <input id="search" value="我是初始值" required="" type="search"><label for="search" class="icon-clear"></label>
+        </div>
+	</body>	
+</html>

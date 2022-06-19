@@ -1,0 +1,30 @@
+<!--
+	名称:css-子div设置margin-top后，父div与子div一起下移
+	实现:在父级添加border或者padding（16行或者17行）
+	来源:https://www.baidu.com/link?url=C76cXODaeQfWQSYHHsEuA5D8_N5IYYPjis0ojHXQt4ZQZ_8vM3Q8Y9VwTcyIEgElYOWINS6mwyUAFgJs-5ZZlq&wd=&eqid=c281b4490000c73d000000065a470b18
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+    .father{
+        width:200px;
+        height:200px;
+        background:red;
+        /*border-top: 1px solid #0f0;*/
+       /*padding-top: 1px;*/
+    }
+    .son{
+        background:purple;
+        margin-top:50px;
+    }
+</style>
+	</head>
+	<body>
+		<div class="father">
+        <div class="son">123</div>
+    </div>
+	</body>
+</html>

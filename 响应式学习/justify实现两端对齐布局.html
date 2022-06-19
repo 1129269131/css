@@ -1,0 +1,60 @@
+<!--
+	来源:http://demo.cssworld.cn/8/6-8.php
+	适用:IE8及以上
+	多行请参见:CSS世界271行
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+.clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
+.clearfix { *zoom:1;}
+
+.justify {
+  background-color: #f0f3f9;
+  text-align: justify;
+  font-size: .1px;
+  font-size: -webkit-calc(0px + 0px);
+}
+.justify:after {
+  content: "";
+  display: inline-table;
+  width: 100%;
+  vertical-align: bottom;
+}
+.justify img {
+  width: 128px;
+  height: 96px;
+  vertical-align: top;
+}
+.justify li {
+  display: inline-block;
+  width: 128px;
+  font-size: 14px;
+  text-align: center;
+}
+.justify p {
+  margin-top: .5em;
+}
+
+		</style>
+	</head>
+	<body>
+		<ul class='justify'>
+			<li>
+				<img src='a1.png'/>
+				<p>图标描述1</p>
+			</li>
+			<li>
+				<img src='a1.png'/>
+				<p>图标描述2</p>
+			</li>
+		</ul>
+	</body>	
+</html>

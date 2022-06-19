@@ -1,0 +1,32 @@
+<!--
+	关键： vertical-align: middle;若无此css属性且.detail为空则.title内容与.detail底部平齐
+	原因：可查看《CSS世界》135页--》5.3.4的论述
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.content span{
+				line-height: 30px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.detail{
+				width: 320px;
+			    height: 30px;
+			    background: #f5f5f5;				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<span class="title">所在城市x：</span>
+			<span class="detail">若此处无字</span>
+		</div>
+	</body>
+
+</html>

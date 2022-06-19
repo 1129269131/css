@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+	来源： https://www.zhangxinxu.com/wordpress/2019/08/css-flex-last-align/
+	PS：首先最后一行需要左对齐的布局更适合使用CSS grid布局实现，但是，repeat()函数兼容性有些要求，IE浏览器并不支持。如果项目需要兼容IE，则此方法需要斟酌。
+-->
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.container {
+				display: grid;
+				justify-content: space-between;
+				grid-template-columns: repeat(auto-fill, 100px);
+				grid-gap: 10px;
+			}
+			
+			.list {
+				width: 100px;
+				height: 100px;
+				background-color: skyblue;
+				margin-top: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="list"></div>
+			<div class="list"></div>
+			<div class="list"></div>
+			<div class="list"></div>
+			<div class="list"></div>
+			<div class="list"></div>
+			<div class="list"></div>
+		</div>
+	</body>
+
+</html>

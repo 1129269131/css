@@ -1,0 +1,44 @@
+<!--
+	网址:http://www.zhangxinxu.com/wordpress/2017/05/jquery-guide-js-plugin/
+	说明:操作向导镂空提示
+	说明:第一次打开才会跳出
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.logo {
+				height: 200px;
+				background: #f00;
+			}
+		</style>
+	</head>
+	<div class="logo"></div>
+
+	<body>
+
+		<script src="bs\js/jquery-1.8.0.min.js"></script>
+		<script src="bs\js/jquery.guide.js"></script>
+		<script>
+			$.guide([{
+				selector: '.logo',
+				content: '<img src="img/guide-1.png" width="102" height="47">',
+				align: 'left'
+			}, {
+				selector: '.ad img',
+				content: '<img src="img/guide-2.png" width="104" height="47">'
+			}, {
+				selector: '#back',
+				content: '<img src="img/guide-3.png" width="72" height="47">',
+				align: 'left'
+			}, {
+				selector: '.demo img',
+				content: '<img src="img/guide-4.png" width="86" height="47">'
+			}]);
+		</script>
+	</body>
+
+</html>

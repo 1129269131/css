@@ -1,0 +1,57 @@
+<!--
+	http://demo.cssworld.cn/5/3-10.php
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+.clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
+.clearfix { *zoom:1;}
+.container{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+	text-align: center;
+	font-size: 0;
+	white-space: nowrap;
+	overflow: auto;
+}
+.container:after{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.dialog{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 14px;
+	white-space: normal;
+	background-color: #fff;
+}
+.content {
+    width: 240px;
+    height: 120px;
+    padding: 20px;
+}
+		</style>
+	</head>
+	<body>
+	<div class="container">
+                <div class="dialog">
+                    <div class="content">内容占位</div>
+                </div>
+     </div>
+		
+	</body>	
+</html>

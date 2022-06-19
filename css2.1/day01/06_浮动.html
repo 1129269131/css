@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--02.尚硅谷_css2.1_浮动-->
+<!--
+	知识点:
+		浮动提升(层级)半层	
+		#up 与  #down各有两层，上层为文字相关，下层为盒模型，#up浮动提升半层，所以变为: 
+		#down的div	--》 #up的div --》#up的文字  与	 #down的文字
+-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 200px;
+				height: 200px;
+			}
+			#up{
+				float: left;
+				background: pink;
+			}
+			#down{
+				background: deeppink;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="up">
+			upupupup
+		</div>
+		<div id="down">
+			downdowndown
+		</div>
+	</body>
+</html>

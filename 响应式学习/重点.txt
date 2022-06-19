@@ -1,0 +1,7 @@
+http://demo.cssworld.cn/4/3-2.php
+http://demo.cssworld.cn/5/3-7.php
+http://demo.cssworld.cn/11/1-1.php
+http://demo.cssworld.cn/12/2-3.php	
+http://demo.cssworld.cn/12/2-4.php     IE兼容图片垂直居中
+http://demo.cssworld.cn/12/2-5.php     文字垂直下沉
+http://demo.cssworld.cn/4/4-4.php      border等高布局，来源CSS世界:109页

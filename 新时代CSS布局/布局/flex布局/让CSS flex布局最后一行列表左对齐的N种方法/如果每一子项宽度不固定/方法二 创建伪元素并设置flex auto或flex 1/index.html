@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+	来源： https://www.zhangxinxu.com/wordpress/2019/08/css-flex-last-align/
+-->
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.container {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			
+			.list {
+				background-color: skyblue;
+				margin: 10px;
+			}
+			
+			/* 使用伪元素辅助左对齐 */
+			.container::after {
+				content: '';
+				flex: auto;
+				/* 或者flex: 1 */
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<canvas class="list" width="40" height="50"></canvas>
+			<canvas class="list" width="60" height="30"></canvas>
+			<canvas class="list" width="50" height="60"></canvas>
+			<canvas class="list" width="70" height="30"></canvas>
+			<canvas class="list" width="80" height="50"></canvas>
+			<canvas class="list" width="70" height="70"></canvas>
+			<canvas class="list" width="60" height="50"></canvas>
+			<canvas class="list" width="40" height="50"></canvas>
+			<canvas class="list" width="50" height="60"></canvas>
+			<canvas class="list" width="70" height="30"></canvas>
+			<canvas class="list" width="80" height="50"></canvas>
+		</div>
+	</body>
+
+</html>
